@@ -1,0 +1,20 @@
+name: 💡 Feature request / Wens
+description: An idea to make an app better. / Een idee om een app beter te maken.
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Connector for YNAB
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like? / Wat zou je willen?
+      description: Describe what you want to do, e.g. as a Flow (When … And … Then …). / Beschrijf wat je wilt doen, bijv. als Flow (Als … En … Dan …).
+    validations:
+      required: true

@@ -1,0 +1,44 @@
+name: 🐞 Bug report / Fout melden
+description: Something does not work as expected. / Iets werkt niet zoals verwacht.
+labels: [bug]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Connector for YNAB
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version / App-versie
+      description: Homey app → More → Apps → the app. / Homey-app → Meer → Apps → de app.
+      placeholder: 1.0.0
+  - type: input
+    id: firmware
+    attributes:
+      label: Homey model and firmware / Homey-model en firmware
+      placeholder: Homey Pro (Early 2023), 12.x
+  - type: textarea
+    id: description
+    attributes:
+      label: What happens? / Wat gebeurt er?
+      description: What did you expect, and what happened instead? / Wat verwachtte je en wat gebeurde er?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Stappen om het na te doen
+      placeholder: |
+        1. …
+        2. …
+  - type: textarea
+    id: logs
+    attributes:
+      label: Status or error message / Status of foutmelding
+      description: Copy the status from the app settings page. Never paste tokens or passwords! / Kopieer de status van de instellingenpagina. Plak nooit tokens of wachtwoorden!
+      render: text

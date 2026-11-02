@@ -1,0 +1,33 @@
+name: 💬 From the Homey forum / Vanuit het forum
+description: Used by the maintainer to log a forum post. / Voor de beheerder om een forummelding vast te leggen.
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Connector for YNAB
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Bug
+        - Feature request
+        - Question
+      default: 0
+  - type: input
+    id: forum-link
+    attributes:
+      label: Forum link
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / Omschrijving
+    validations:
+      required: true

@@ -43,5 +43,5 @@ Readable source: [`tools/forum-to-issue.js`](tools/forum-to-issue.js).
 ### Linking to the private code repositories
 
 - Create a follow-up issue in the private app repository with the link to the public issue. Visitors cannot see private issues or code.
-- A commit or pull request in the private repository with `Fixes MrKwezel/homey-app-support#<number>` should close the public issue once it lands on `main` (check this once: cross-repository closing from a private repository can behave differently).
+- Commits in a private repository do **not** close public issues automatically (`Fixes MrKwezel/homey-app-support#<number>` has no effect there). Close the public issue by hand with a short comment naming the version that contains the fix.
 - A GitHub Project on your account can show issues from public and private repositories on one board.
